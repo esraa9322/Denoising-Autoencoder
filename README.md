@@ -2,7 +2,7 @@
 # 1. Data and Preprocessing: 
 We have used a subset of the landscape dataset that contains 4319 RGB images
 provided by kaggle from this link :
-    https://www.kaggle.com/datasets/arnaud58/landscape-pictures/code
+         https://www.kaggle.com/datasets/arnaud58/landscape-pictures/code
 It contains images with 7 different backgrounds.
 To work with the data we created a subset of the data with size 100 instances , split it 80 images for
 training and 20 images for testing.
@@ -19,4 +19,6 @@ I have tried two different approaches :
 1. In the Fisrst approach I trained the autoencoder on the normalized training set , then I have tested it on noised images (external test set ) , I have tested this  approach on two different convolutional autoencoders; the first one went from 16 to 8 and the second one went from 80 to 32 . 
 2. In the Second approach I have separated the autoencoders into two parts (encoder and decoder) , added the noise to the encodeed images then passed it to the decoder , tested this approach on two different convolutional autoencoders one went from 16 to 8 and the other one went from 80 to 32. 
 # 3. Run : 
-To be able to run the model you will need to install tensorflow to be able to work with Keras Connvolution Layers , you can install it using the following command :            pip install tensorflow 
+To be able to run the model you will need to install tensorflow to be able to work with Keras Connvolution Layers , you can install it using the following command : 
+
+               ! pip install tensorflow 
