@@ -18,3 +18,5 @@ At the beginning I have created gaussian noise with mean = 0 , and standard devi
 I have tried two different approaches : 
 1. In the Fisrst approach I trained the autoencoder on the normalized training set , then I have tested it on noised images (external test set ) , I have tested this  approach on two different convolutional autoencoders; the first one went from 16 to 8 and the second one went from 80 to 32 . 
 2. In the Second approach I have separated the autoencoders into two parts (encoder and decoder) , added the noise to the encodeed images then passed it to the decoder , tested this approach on two different convolutional autoencoders one went from 16 to 8 and the other one went from 80 to 32. 
+# 3. Run : 
+To be able to run the model you will need to install tensorflow to be able to work with Keras Connvolution Layers , you can install it using the following command :            pip install tensorflow 
