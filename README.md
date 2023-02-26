@@ -12,4 +12,9 @@ very high computational power.
 for testing after the training process we have created another test set which contained 3 different images from the ones in the training set , and also preprocessed them. 
 # 2. Methodology : 
 At the beginning I have created gaussian noise with mean = 0 , and standard deviation = 1 over images , and here is an example of how they looked :
-![image](https://user-images.githubusercontent.com/60916510/221427402-f4f4e7ab-bc84-4388-9887-5af3be1de4d0.png)
+
+    ![image](https://user-images.githubusercontent.com/60916510/221427402-f4f4e7ab-bc84-4388-9887-5af3be1de4d0.png)
+
+I have tried two different approaches : 
+1. In the Fisrst approach I trained the autoencoder on the normalized training set , then I have tested it on noised images (external test set ) , I have tested this  approach on two different convolutional autoencoders; the first one went from 16 to 8 and the second one went from 80 to 32 . 
+2. In the Second approach I have separated the autoencoders into two parts (encoder and decoder) , added the noise to the encodeed images then passed it to the decoder , tested this approach on two different convolutional autoencoders one went from 16 to 8 and the other one went from 80 to 32. 
